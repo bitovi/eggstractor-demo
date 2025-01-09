@@ -1,0 +1,72 @@
+// Generated SCSS Variables
+$global-colour-action-textonbg: #ffffff
+$base-font-weight-semibold: 500px
+$global-colour-textonlight: #282828
+$base-font-size-xl: 20px
+$base-font-linespacing-lg: 24px
+$base-colour-static-white: #ffffff
+$base-colour-grey-100: #d9d9d9
+$base-font-weight-regular: 400px
+$base-colour-grey-300: #747474
+$global-colour-action-background: #0177cc
+
+// Generated SCSS Mixins
+@mixin button_resting_button-text
+  color: $global-colour-action-textonbg
+  font-weight: $base-font-weight-semibold
+
+@mixin button_resting_icon-1
+  border-width: 1px
+
+@mixin button_hover_button-text
+  color: $global-colour-action-textonbg
+  font-weight: $base-font-weight-semibold
+
+@mixin button_hover_icon-1
+  border-width: 1px
+
+@mixin input_resting_label
+  color: $global-colour-textonlight
+  font-size: $base-font-size-xl
+  font-weight: $base-font-weight-semibold
+  line-height: $base-font-linespacing-lg
+
+@mixin input_resting_input-box
+  background-color: $base-colour-static-white
+  border-color: $base-colour-grey-100
+  border-width: 1px
+
+@mixin input_resting_input-box_input-text
+  color: $global-colour-textonlight
+  font-weight: $base-font-weight-regular
+
+@mixin input_hover_label
+  color: $global-colour-textonlight
+  font-size: $base-font-size-xl
+  font-weight: $base-font-weight-semibold
+  line-height: $base-font-linespacing-lg
+
+@mixin input_hover_input-box
+  background-color: $base-colour-static-white
+  border-color: $base-colour-grey-300
+  border-width: 1px
+
+@mixin input_hover_input-box_input-text
+  color: $global-colour-textonlight
+  font-weight: $base-font-weight-regular
+
+@mixin input_active_label
+  color: $global-colour-textonlight
+  font-size: $base-font-size-xl
+  font-weight: $base-font-weight-semibold
+  line-height: $base-font-linespacing-lg
+
+@mixin input_active_input-box
+  background-color: $base-colour-static-white
+  border-color: $global-colour-action-background
+  border-width: 2px
+
+@mixin input_active_input-box_input-text
+  color: $global-colour-textonlight
+  font-weight: $base-font-weight-regular
+
