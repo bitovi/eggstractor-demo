@@ -1,13 +1,14 @@
 // Generated SCSS Variables
 $global-colour-action-textonbg: #ffffff
 $base-font-weight-semibold: 500px
-$base-colour-pink-300: #cd0087
+$base-colour-blue-200: #8bc4ff
 $base-font-size-xl: 20px
 $base-font-linespacing-lg: 24px
 $base-colour-static-white: #ffffff
 $base-colour-grey-100: #d9d9d9
 $global-colour-textonlight: #282828
 $base-font-weight-regular: 400px
+$base-colour-pink-300: #cd0087
 $base-colour-grey-300: #747474
 $brand-colour-accent-300: #0177cc
 
@@ -18,6 +19,9 @@ $brand-colour-accent-300: #0177cc
 
 @mixin button_resting_icon-1
   border-width: 1px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
 
 @mixin button_hover_button-text
   color: $global-colour-action-textonbg
@@ -25,9 +29,12 @@ $brand-colour-accent-300: #0177cc
 
 @mixin button_hover_icon-1
   border-width: 1px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
 
 @mixin input_resting_label
-  color: $base-colour-pink-300
+  color: $base-colour-blue-200
   font-size: $base-font-size-xl
   font-weight: $base-font-weight-semibold
   line-height: $base-font-linespacing-lg
@@ -36,6 +43,10 @@ $brand-colour-accent-300: #0177cc
   background-color: $base-colour-static-white
   border-color: $base-colour-grey-100
   border-width: 1px
+  border-radius: 12px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
 
 @mixin input_resting_input-box_input-text
   color: $global-colour-textonlight
@@ -51,6 +62,10 @@ $brand-colour-accent-300: #0177cc
   background-color: $base-colour-static-white
   border-color: $base-colour-grey-300
   border-width: 1px
+  border-radius: 12px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
 
 @mixin input_hover_input-box_input-text
   color: $global-colour-textonlight
@@ -66,6 +81,9 @@ $brand-colour-accent-300: #0177cc
   background-color: $base-colour-static-white
   border-color: $brand-colour-accent-300
   border-width: 2px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
 
 @mixin input_active_input-box_input-text
   color: $global-colour-textonlight
