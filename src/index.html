@@ -20,5 +20,11 @@
       >
     </div>
   </div>
+
+  <script>
+    const input = document.querySelector('.input-field');
+    input.addEventListener('focus', () => input.classList.add('active'));
+    input.addEventListener('blur', () => input.classList.remove('active'));
+  </script>
 </body>
 </html>
