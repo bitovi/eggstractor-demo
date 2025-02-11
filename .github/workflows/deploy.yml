@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
+    branches: ['*']
   pull_request:
+    branches: ['*']
 
 # Add concurrency settings
 concurrency: 
