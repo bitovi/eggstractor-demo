@@ -1,6 +1,6 @@
 # Eggstrator Demo
 
-This is a demo of the Eggstrator project.
+Hello. This is a demo of the Eggstrator project.
 
 To run the demo, you can use the following command:
 
