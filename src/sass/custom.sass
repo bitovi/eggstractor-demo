@@ -7,32 +7,32 @@
   padding: 20px
 
 .custom-input
-  @include source.input_resting
+  @include source.resting
   align-items: stretch
 
   label
-    @include source.input_resting_label
+    @include source.resting_label
   
   input
     border-style: solid
-    @include source.input_resting_input-box
-    @include source.input_resting_input-box_input-text
+    @include source.resting_input-box
+    @include source.resting_input-box_input-text
     
     &:focus-visible
       outline: none
     
   &:hover
     label 
-      @include source.input_hover_label
+      @include source.hover_label
     
     input 
-      @include source.input_hover_input-box
-      @include source.input_hover_input-box_input-text
+      @include source.hover_input-box
+      @include source.hover_input-box_input-text
     
   &:focus-within
     input
-      @include source.input_active_input-box
-      @include source.input_active_input-box_input-text
+      @include source.active_input-box
+      @include source.active_input-box_input-text
 
     label 
-      @include source.input_active_label
+      @include source.active_label
