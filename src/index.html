@@ -6,19 +6,59 @@
 
   <title>Eggstractor Demo</title>
   <!-- Link to our final compiled CSS -->
-  <link rel="stylesheet" href="./prod.css" />
+  <link rel="stylesheet" href="./css/prod.css" />
 </head>
 <body>
   <div class="container">
-    <div class="custom-input">
-      <label for="demo-input">Label Text</label>
-      <input 
-        type="text" 
-        id="demo-input" 
-        class="input-field"
-        placeholder="Enter text..."
-      >
+    <div class="card">
+    <form class="signup-form">
+      <div class="name-row">
+       <div class="custom-input">
+          <label for="first-name">First Name</label>
+          <input 
+          type="text" 
+          id="first-name" 
+          class="input-field"
+          placeholder="First name"
+          name="firstName"
+          />
+        </div>
+      <div class="custom-input">
+        <label for="last-name">Last Name</label>
+        <input 
+          type="text" 
+          id="last-name" 
+          class="input-field"
+          placeholder="Last name"
+          name="lastName"
+        />
+        </div>
+      </div>
+        <div class="custom-input">
+        <label for="email-address">Email Address</label>
+        <input 
+          type="email" 
+          id="email-address" 
+          class="input-field"
+          placeholder="Email address"
+          name="email"
+        />
+       </div>
+      <div class="custom-input">
+        <label for="phone-number">Phone Number</label>
+        <input 
+          type="tel" 
+          id="phone-number" 
+          class="input-field"
+          placeholder="Phone number"
+          name="phone"
+        />
     </div>
+      <div class="custom-input">
+        <button type="submit" class="signup-button">Sign Up</button>
+      </div>
+    </form>
+  </div>
   </div>
 </body>
 </html>
