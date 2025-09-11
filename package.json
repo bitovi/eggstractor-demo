@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && sass src/sass/custom.sass:dist/prod.css --style compressed && cp src/index.html dist/ && cp src/404.html dist/",
+    "build": "npm run clean && sass src/sass/custom.scss:dist/prod.css --style compressed && cp src/index.html dist/ && cp src/404.html dist/",
     "serve": "browser-sync start --server dist --files 'dist/**/*' --no-notify",
     "start": "npm run build && npm run serve",
-    "watch:sass": "sass --watch src/sass/custom.sass:dist/prod.css --style compressed",
+    "watch:sass": "sass --watch src/sass/custom.scss:dist/prod.css --style compressed",
+    "watch:scss": "npm run watch:sass",
     "watch:files": "nodemon --watch src --ext html --exec \"cp src/*.html dist/\"",
     "dev": "npm run clean && npm run build && concurrently \"npm run watch:sass\" \"npm run watch:files\" \"npm run serve\""
   },

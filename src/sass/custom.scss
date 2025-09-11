@@ -1,0 +1,49 @@
+@use 'source';
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-input {
+  @include source.input-resting;
+  align-items: stretch;
+
+  label {
+    @include source.input-label-resting;
+  }
+
+  input {
+    border-style: solid;
+    @include source.input-input-box-resting;
+    @include source.input-input-box-input-text-resting;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    label {
+      @include source.input-label-hover;
+    }
+
+    input {
+      @include source.input-input-box-hover;
+      @include source.input-input-box-input-text-hover;
+    }
+  }
+
+  &:focus-within {
+    input {
+      @include source.input-input-box-active;
+      @include source.input-input-box-input-text-active;
+    }
+
+    label {
+      @include source.input-label-active;
+    }
+  }
+}
